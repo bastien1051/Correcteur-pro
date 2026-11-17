@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Correcteur Pro">
+  <rect width="64" height="64" rx="14" fill="#1f3a5f"/>
+  <rect x="14" y="18" width="36" height="3" rx="1.5" fill="#f4f1ea"/>
+  <rect x="14" y="26" width="28" height="3" rx="1.5" fill="#f4f1ea"/>
+  <rect x="14" y="34" width="32" height="3" rx="1.5" fill="#f4f1ea"/>
+  <path d="M14 42c6 4 12-4 18 0s12 4 18-3" fill="none" stroke="#e4c58a" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M40 46l4 4 8-10" fill="none" stroke="#e4c58a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

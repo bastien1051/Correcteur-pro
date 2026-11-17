@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Correcteur Pro, par les Éditions Bastien. Correction, traduction et courriers en français. Gratuit, sans compte." />
+    <meta name="theme-color" content="#f4f1ea" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Correcteur Pro" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Correcteur Pro</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <script>
+      try {
+        var stored = localStorage.getItem('correcteur-pro-theme')
+        var dark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
+        var meta = document.querySelector('meta[name="theme-color"]')
+        if (meta) meta.setAttribute('content', dark ? '#141511' : '#f4f1ea')
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>Activez JavaScript pour utiliser Correcteur Pro.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

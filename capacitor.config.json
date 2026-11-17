@@ -1,0 +1,14 @@
+{
+  "appId": "fr.editionsbastien.correcteurpro",
+  "appName": "Correcteur Pro",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https",
+    "url": "https://bastien1051.github.io/Correcteur-pro/",
+    "errorPath": "index.html",
+    "allowNavigation": ["bastien1051.github.io"]
+  }
+}
